@@ -1,4 +1,7 @@
-#tittle-name{
-    text-align: center;
+@media only screen and (max-width: 320px) {
+
+#pic{
+    padding-left: 0px;
+}
 
 }

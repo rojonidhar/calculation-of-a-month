@@ -23,13 +23,13 @@
                 <div class="row">
                   <div class="col">
                     <!------- image section-------  -->
-                    <img class="ps-5 mt-5" src="images/manage-money-concept-illustration_114360-8029.jpg" alt="" srcset="">
+                    <img id="pic" class="ps-0 mt-5" src="images/manage-money-concept-illustration_114360-8029.jpg" alt="" srcset="">
            
                  </div>
-                  <div class="col bg-light mt-5 ">
+                  <div id="formDiv" class="col bg-light mt-5 ms-4 ">
 
                     <!-- -----form section stars here-----  -->
-                    <form >
+                    <form id="form" >
                       <!-------- the heading of the form-------  -->
                    <h4 class="text-center fw-bolder  mt-4" >Income</h4>
 
@@ -54,7 +54,7 @@
 
                     <!---------- Here the calculation button--------  -->
 
-                    <p class="text-center"><button id="cal-btn" class=" ps-5 pe-5 fw-bolder btn btn-primary">Calculation</button></p> 
+                    <p class="text-center"><button id="cal-btn" class=" ps-5 pe-5 mt-4 fw-bolder btn btn-primary">Calculation</button></p> 
 
                     <!----------
                               And output of the total cost and restAomunt
@@ -69,7 +69,7 @@
                     <input id="save-input" class="bg-secondary border-0 bg-opacity-25" type="text " ><label class="m-3" for="">%</label><button id="saving-btn" class="ps-5 pe-5 fw-bolder btn btn-primary">Save</button>
 
                     <!------ saving amount output and remaing balance  ----->
-                    <h3  class="text-center fw-bolder" >Saving Amount: <span id="Saving Amount"></span></h3>
+                    <h3  class="text-center fw-bolder mt-4" >Saving Amount: <span id="Saving Amount"></span></h3>
                     <h3  class="text-center fw-bolder" >Remaning Balance :  <span id="Remaning Balance"></span></h3>
 
 
