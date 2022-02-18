@@ -1,15 +1,11 @@
 // for three input values 
 function sumCal(values){
-    if(values >0){
+    
     const Input =document.getElementById(values);
     const Value=Input.value;
     const Par=parseInt(Value);
     return Par;
-    }
-    else{
-        return "please input valid number"
-    }
-
+  
 }
 
 // Total balance and Balance output 
