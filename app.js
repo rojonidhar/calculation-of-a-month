@@ -1,18 +1,23 @@
 // for three input values 
 function sumCal(values){
+    if(values >0){
     const Input =document.getElementById(values);
     const Value=Input.value;
     const Par=parseInt(Value);
     return Par;
+    }
+    else{
+        return "please input valid number"
+    }
 
 }
 
 // Total balance and Balance output 
 function showed(outputfield,setvalue){
+   
     const totalEx = document.getElementById(outputfield);
     const totalOut=totalEx.innerText;
     totalEx.innerText=setvalue;
-   
 
 }
 // --------onclick for the calculation button-------- 
@@ -35,7 +40,7 @@ showed('Total-Expenses',sum);
  
 
 //  for balance amount 
- const restAmount = parIncame-sum;
+ let restAmount = parIncame-sum;
  //  showing the totalExpenses 
  showed('Balance-input',restAmount);
 
@@ -57,7 +62,7 @@ showed('Saving Amount',saveTotal);
   
 //---- for remaing balance output ------ 
 showed('Remaning Balance',blanceAndSave);
-
+let restAmount = parIncame-sum;
 const blanceAndSave = restAmount-saveTotal;
 
 
