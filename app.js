@@ -62,7 +62,10 @@ showed('Saving Amount',saveTotal);
   
 //---- for remaing balance output ------ 
 showed('Remaning Balance',blanceAndSave);
-let restAmount = parIncame-sum;
+
+
+//  for balance amount 
+
 const blanceAndSave = restAmount-saveTotal;
 
 
