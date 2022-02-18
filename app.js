@@ -46,13 +46,19 @@ document.getElementById('saving-btn').addEventListener('click',function(){
     const saveInput=document.getElementById('save-input');
     const saveOut=saveInput.value;
     const parSave = parseInt(saveOut);
-    const saveTotal = (parSave*100)/100;
+    const saveTotal = (parSave*100);
 
 
-    const saveInput2=document.getElementById('Saving Amount')
-    const saveOut2 = saveInput2.innerText;
-    saveInput2.innerText=saveTotal;
 
+    //---- Saving Amount to output------ 
+showed('Saving Amount',saveTotal);
+    
+
+  
+//---- for remaing balance output ------ 
+showed('Remaning Balance',blanceAndSave);
+
+const blanceAndSave = restAmount-saveTotal;
 
 
 })
